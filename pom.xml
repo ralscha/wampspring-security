@@ -21,7 +21,7 @@
 
 	<name>Integration of wampspring with Spring Security</name>
 	<description>Integration of wampspring with Spring Security</description>
-	<url>https://github.com/ralscha/wampspring/</url>
+	<url>https://github.com/ralscha/wampspring-security/</url>
 
 	<developers>
 		<developer>
