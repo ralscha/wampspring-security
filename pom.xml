@@ -40,13 +40,13 @@
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/ralscha/wampspring/issues</url>
+		<url>https://github.com/ralscha/wampspring-security/issues</url>
 	</issueManagement>
 
 	<scm>
-		<connection>scm:git:git@github.com:ralscha/wampspring.git</connection>
-		<developerConnection>scm:git:git@github.com:ralscha/wampspring.git</developerConnection>
-		<url>https://github.com/ralscha/wampspring.git</url>
+		<connection>scm:git:git@github.com:ralscha/wampspring-security.git</connection>
+		<developerConnection>scm:git:git@github.com:ralscha/wampspring-security.git</developerConnection>
+		<url>https://github.com/ralscha/wampspring-security.git</url>
 	</scm>
 
 	<properties>
@@ -75,17 +75,6 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-		<repository>
-			<id>sonatype</id>
-			<name>sonatype</name>
-			<url>https://oss.sonatype.org/content/groups/public</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository>
 	</repositories>
 
 	<dependencies>
@@ -105,7 +94,7 @@
 		<dependency>
 			<groupId>ch.rasc</groupId>
 			<artifactId>wampspring</artifactId>
-			<version>1.1.0-SNAPSHOT</version>
+			<version>1.1.0</version>
 		</dependency>
 
 	</dependencies>
