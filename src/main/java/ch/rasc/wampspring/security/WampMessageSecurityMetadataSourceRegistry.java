@@ -113,7 +113,7 @@ public class WampMessageSecurityMetadataSourceRegistry {
 	 * @return the {@link Constraint} that is associated to the {@link MessageMatcher}
 	 * @see {@link MessageSecurityMetadataSourceRegistry#wampDestPathMatcher(PathMatcher)}
 	 */
-	public Constraint wampDestCallMatchers(String... patterns) {
+	public Constraint wampCallDestMatchers(String... patterns) {
 		return wampDestMatchers(WampMessageType.CALL, patterns);
 	}
 
@@ -129,7 +129,7 @@ public class WampMessageSecurityMetadataSourceRegistry {
 	 * @return the {@link Constraint} that is associated to the {@link MessageMatcher}
 	 * @see {@link MessageSecurityMetadataSourceRegistry#wampDestPathMatcher(PathMatcher)}
 	 */
-	public Constraint wampDestPublishMatchers(String... patterns) {
+	public Constraint wampPublishDestMatchers(String... patterns) {
 		return wampDestMatchers(WampMessageType.PUBLISH, patterns);
 	}
 
@@ -145,7 +145,7 @@ public class WampMessageSecurityMetadataSourceRegistry {
 	 * @return the {@link Constraint} that is associated to the {@link MessageMatcher}
 	 * @see {@link MessageSecurityMetadataSourceRegistry#wampDestPathMatcher(PathMatcher)}
 	 */
-	public Constraint wampDestSubscribeMatchers(String... patterns) {
+	public Constraint wampSubscribeDestMatchers(String... patterns) {
 		return wampDestMatchers(WampMessageType.SUBSCRIBE, patterns);
 	}
 
@@ -161,7 +161,7 @@ public class WampMessageSecurityMetadataSourceRegistry {
 	 * @return the {@link Constraint} that is associated to the {@link MessageMatcher}
 	 * @see {@link MessageSecurityMetadataSourceRegistry#wampDestPathMatcher(PathMatcher)}
 	 */
-	public Constraint wampDestUnsubscribeMatchers(String... patterns) {
+	public Constraint wampUnsubscribeDestMatchers(String... patterns) {
 		return wampDestMatchers(WampMessageType.UNSUBSCRIBE, patterns);
 	}
 
