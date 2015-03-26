@@ -15,7 +15,7 @@
 
 	<groupId>ch.rasc</groupId>
 	<artifactId>wampspring-security</artifactId>
-	<version>1.1.0-SNAPSHOT</version>
+	<version>1.1.1-SNAPSHOT</version>
 
 	<inceptionYear>2015</inceptionYear>
 
@@ -51,7 +51,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring-security.version>4.0.0.RC1</spring-security.version>
+		<spring-security.version>4.0.0.RELEASE</spring-security.version>
 	</properties>
 
 	<dependencyManagement>
@@ -59,7 +59,7 @@
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-framework-bom</artifactId>
-				<version>4.1.5.RELEASE</version>
+				<version>4.1.6.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -94,7 +94,7 @@
 		<dependency>
 			<groupId>ch.rasc</groupId>
 			<artifactId>wampspring</artifactId>
-			<version>1.1.0</version>
+			<version>1.1.1-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
