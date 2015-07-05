@@ -305,8 +305,8 @@ public class WampMessageSecurityMetadataSourceRegistry {
 		 * customization
 		 */
 		public WampMessageSecurityMetadataSourceRegistry hasAuthority(String authority) {
-			return access(WampMessageSecurityMetadataSourceRegistry
-					.hasAuthority(authority));
+			return access(
+					WampMessageSecurityMetadataSourceRegistry.hasAuthority(authority));
 		}
 
 		/**
@@ -397,8 +397,8 @@ public class WampMessageSecurityMetadataSourceRegistry {
 		 */
 		public WampMessageSecurityMetadataSourceRegistry access(String attribute) {
 			for (MatcherBuilder messageMatcher : this.messageMatchers) {
-				WampMessageSecurityMetadataSourceRegistry.this.matcherToExpression.put(
-						messageMatcher, attribute);
+				WampMessageSecurityMetadataSourceRegistry.this.matcherToExpression
+						.put(messageMatcher, attribute);
 			}
 			return WampMessageSecurityMetadataSourceRegistry.this;
 		}
@@ -461,8 +461,8 @@ public class WampMessageSecurityMetadataSourceRegistry {
 				return new WampDestinationMessageMatcher(this.pattern, this.type,
 						WampMessageSecurityMetadataSourceRegistry.this.pathMatcher);
 			}
-			throw new IllegalStateException(this.type
-					+ " is not supported since it does not have a destination");
+			throw new IllegalStateException(
+					this.type + " is not supported since it does not have a destination");
 		}
 	}
 

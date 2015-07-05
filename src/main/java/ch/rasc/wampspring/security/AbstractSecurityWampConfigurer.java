@@ -42,7 +42,7 @@ import ch.rasc.wampspring.message.WampMessageHeader;
  * <pre>
  * &#064;Configuration
  * public class SecurityWampConfigurer extends AbstractUserWampConfigurer {
- * 
+ *
  * 	&#064;Override
  * 	protected void configureInbound(MessageSecurityMetadataSourceRegistry messages) {
  * 		messages.wampPublishDestMatchers(&quot;/user/queue/errors&quot;).permitAll()
@@ -60,7 +60,8 @@ public abstract class AbstractSecurityWampConfigurer extends AbstractWampConfigu
 	private final WampMessageSecurityMetadataSourceRegistry inboundRegistry = new WampMessageSecurityMetadataSourceRegistry();
 
 	@Override
-	public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
+	public void addArgumentResolvers(
+			List<HandlerMethodArgumentResolver> argumentResolvers) {
 		argumentResolvers.add(new AuthenticationPrincipalArgumentResolver());
 	}
 
