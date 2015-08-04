@@ -50,7 +50,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring-security.version>4.0.1.RELEASE</spring-security.version>
+		<spring-security.version>4.0.2.RELEASE</spring-security.version>
 	</properties>
 
 	<dependencyManagement>
@@ -58,7 +58,7 @@
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-framework-bom</artifactId>
-				<version>4.1.7.RELEASE</version>
+				<version>4.2.0.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
