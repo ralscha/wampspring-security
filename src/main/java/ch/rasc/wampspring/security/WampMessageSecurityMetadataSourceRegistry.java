@@ -390,8 +390,8 @@ public class WampMessageSecurityMetadataSourceRegistry {
 		/**
 		 * Allows specifying that Messages are secured by an arbitrary expression
 		 *
-		 * @param attribute the expression to secure the URLs (i.e.
-		 * "hasRole('ROLE_USER') and hasRole('ROLE_SUPER')")
+		 * @param attribute the expression to secure the URLs (i.e. "hasRole('ROLE_USER')
+		 * and hasRole('ROLE_SUPER')")
 		 * @return the {@link WampMessageSecurityMetadataSourceRegistry} for further
 		 * customization
 		 */
