@@ -47,7 +47,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring-security.version>4.2.2.RELEASE</spring-security.version>
+		<spring-security.version>4.2.3.RELEASE</spring-security.version>
 	</properties>
 
 	<dependencyManagement>
@@ -62,19 +62,6 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<repositories>
-			<repository>
-				<id>sonatype</id>
-				<name>sonatype</name>
-				<url>https://oss.sonatype.org/content/groups/public</url>
-				<snapshots>
-					<enabled>true</enabled>
-				</snapshots>
-				<releases>
-					<enabled>true</enabled>
-				</releases>
-			</repository>	
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -241,6 +228,44 @@
 				<configuration>
 					<additionalparam>-Xdoclint:none</additionalparam>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<header>${basedir}/header.txt</header>
+					<properties>
+						
+						<year>${project.inceptionYear}</year>
+						<currentYear>2017</currentYear>
+						
+					</properties>
+					<excludes>
+						<exclude>**/*.xml</exclude>
+						<exclude>**/*.txt</exclude>
+						<exclude>**/*.md</exclude>
+						<exclude>**/*.json</exclude>
+						<exclude>**/*.py</exclude>
+						<exclude>**/*.yml</exclude>
+						<exclude>**/.gitignore</exclude>
+						<exclude>LICENSE</exclude>
+						<exclude>.mvn/**/*</exclude>
+						<exclude>mvnw</exclude>			
+						<exclude>mvnw.cmd</exclude>
+					</excludes>
+					<strictCheck>true</strictCheck>
+				</configuration>
+				<executions>
+					<execution>
+						<id>check-headers</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 
 		</plugins>
